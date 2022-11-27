@@ -1,0 +1,29 @@
+.wrapper {
+    width: 500px;
+    margin: auto;
+}
+
+.profile {
+    display: block;
+    text-align: center;
+}
+
+.profile .name {
+    font-size: 18px;
+}
+
+.profile img {
+    border-radius: 100%;
+}
+
+.stats {
+    display: flex;
+    margin-left: auto;
+}
+.stats div {
+    margin-right: 50px;
+}
+
+.stats span {
+    display: block;
+}
