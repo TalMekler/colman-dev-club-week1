@@ -11,7 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Profile card component</title>
 
@@ -20,6 +23,10 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -27,39 +34,44 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      
-      <div class="profile">
-        <img src="/First-Html-page/bonus/images/image-victor.jpg" alt="">
-        <div class="name">
-          <strong>Victor Crest</strong> <span class="age">26</span>
-        </div>
-        <div class="location">London</div>   
+    <img src="/First-Html-page/bonus/images/bg-pattern-top.svg" alt="" class="bg-top">
+    <img src="/First-Html-page/bonus/images/bg-pattern-bottom.svg" alt="" class="bg-bottom">
+    <div class="card">
+      <div class="card__top">
+        <img src="/First-Html-page/bonus/images/image-victor.jpg" alt="" />
       </div>
-      
-      
-      <div class="stats">
-        <div class="followers">
-          <span>80K</span>
-          <span>Followers</span>
+      <div class="card__bottom">
+        <div class="profile">
+          <span class="profile__name">Victor Crest</span>
+          <span class="profile__age">26</span>
+          <span class="profile__location">London</span>
         </div>
-        <div class="likes">
-          <span>803K</span>
-          <span>Likes</span> 
-        </div>
-        <div class="photos">
-          <span>1.4K</span>
-          <span>Photos</span>
+        <div class="stats">
+
+          <div class="stat__item">
+            <p class="number">80K</p>
+            <p class="text">Followers</p>
+          </div>
+
+          <div class="stat__item">
+            <p class="number">803K</p>
+            <p class="text">Likes</p>
+          </div>
+
+          <div class="stat__item">
+            <p class="number">1.4K</p>
+            <p class="text">Photos</p>
+          </div>
+
         </div>
       </div>
-      
     </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://www.tal-mekler.com">Tal Mekler</a>.
     </div>
   </body>
 </html>
