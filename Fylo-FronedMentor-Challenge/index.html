@@ -35,8 +35,10 @@
     <div class="wrapper">
       <div class="left-box floating-section">
         <img src="/Fylo-FronedMentor-Challenge/assets/logo.svg" alt="" />
-        <div class="icons">
+        <div class="icons" >
+          
           <div class="icon_bg">
+            <input type="file" class="upload-file" id="upload-file-btn"></input>
             <img
               src="/Fylo-FronedMentor-Challenge/assets/icon-document.svg"
               alt=""
@@ -61,25 +63,27 @@
       </div>
 
       <div class="right-box floating-section">
-        <p>You’ve used <strong>815 GB</strong> of your storage</p>
+        <p>You’ve used <strong><span id="used-size"></span> <span class="size-unit"></span></strong> of your storage</p>
         <div class="range-wrapper">
           <div class="range-bar">
-            <div class="progress-bar">
-              <div class="circle"></div>
+            <div class="progress-bar" id="progress-bar-clr">
+              <div class="circle" id="progress-bar-circle"></div>
             </div>
           </div>
           <div class="range-numbers">
-            <div class="range-numbers__item">0 GB</div>
-            <div class="range-numbers__item">1000 GB</div>
+            <div class="range-numbers__item" id="zero-size">0 <span class="size-unit"></span></div>
+            <div class="range-numbers__item"><span id="max-size"></span> <span class="size-unit"></span></div>
           </div>
         </div>
 
         <div class="bubble">
-          <h1>185</h1>
-          <span>GB Left</span>
+          <h1 id="remain-size">185</h1>
+          <span><span class="size-unit"></span> Left</span>
           <div class="triangle"></div>
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

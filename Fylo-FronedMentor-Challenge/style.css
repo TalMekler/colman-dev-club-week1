@@ -52,6 +52,7 @@ img.bg-img.mobile-img {
 }
 
 .left-box .icons {
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -64,6 +65,16 @@ img.bg-img.mobile-img {
   /* padding: 15px; */
   width: 50px;
   height: 50px;
+  overflow: hidden;
+}
+
+.upload-file {
+  z-index: 1;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .left-box .icons .icon_bg .icons__item {
@@ -98,10 +109,10 @@ img.bg-img.mobile-img {
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
-  width: 81.5%;
   height: 70%;
   border-radius: 50px;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  transition: 300ms ease-in-out;
 }
 
 .right-box .range-wrapper .range-bar .progress-bar .circle {
@@ -111,8 +122,9 @@ img.bg-img.mobile-img {
   border-radius: 100%;
   position: absolute;
   top: 50%;
-  right: 3px;
+  right: 0px;
   transform: translateY(-50%);
+  transition: 300ms ease-in-out;
 }
 
 .right-box .range-wrapper .range-numbers {
@@ -122,6 +134,10 @@ img.bg-img.mobile-img {
 }
 .right-box .range-wrapper .range-numbers .range-numbers__item {
   font-size: 14px;
+}
+
+#zero-size {
+  cursor: pointer;
 }
 
 .right-box .bubble {
